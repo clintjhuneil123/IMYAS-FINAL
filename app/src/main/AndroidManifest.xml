@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vincegeralddelaccerna.ezwheels">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.ReservationScrolling"
+            android:label="@string/title_activity_reservation_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.TradeScrolling"
+            android:label="@string/title_activity_trade_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.ScrollingActivity1"
+            android:label="@string/title_activity_scrolling1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/AppTheme" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.MainActivity" />
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.LoginShop" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.RegisterShop" />
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.ShopDashboard"
+            android:label="@string/title_activity_shop_dashboard"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCn5Caz2H3SqFIIrOSLMJCWYm7n21Oy3VI" />
+
+        <activity android:name=".AddListing" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.Detailed_Listing" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.SetReservationFragment" />
+        <activity android:name="vincegeralddelaccerna.IMYAS.SetTradeinFragment" />
+        <activity
+            android:name="vincegeralddelaccerna.IMYAS.ShopDashBoardFragment"
+            android:label="@string/title_activity_shop_dash_board_fragment"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
